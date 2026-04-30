@@ -13,4 +13,22 @@ function Hobbies(props) {
     )
 }
 
-export default Hobbies
+// let list = ["Photography", "Music", "Sports", "Art", "Playing Chess", "Reading", "Literature", "Researching", "Watching Documentaries", "Cars"]
+
+// class Hobbies {
+//     constructor(){
+//         this.hobby = list;
+//     }
+// }
+
+// display(){
+//     return (
+//         <h1>My Hobbies</h1>
+//         <ul>
+//             <li>{}</li>
+//         </ul>
+//     )
+// }
+
+
+export default  Hobbies
