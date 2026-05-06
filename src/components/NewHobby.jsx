@@ -1,25 +1,18 @@
-import {useState} from "react";
+import {useRef} from "react";
 
-function NewHobby() {
-    const [newHobby, setNewHobby] = useState("")
+function NewHobby({setHobby}) {
+    const newNameRef = useRef("")
 
     function handleClick(){
+        console.log(newNameRef.current.value)
         event.preventDefault();
-        
-        setNewHobby((prevNewHobby) => {prevNewHobby, newHobby
-            console.log(newHobby)
-
-        })
-    }
-
-    function handleChange(){
-        console.log(event.target.value)
+        setHobby((prevHobby) => {prevHobby, newNameRef.current.value})
     }
 
     return (
         <div>
             <label>Add new Hobby</label><br></br>
-            <input placeholder="Enter new Hobby" value={newHobby} onChange={handleChange}/><br></br>
+            <input placeholder="Enter new Hobby" ref={newNameRef} /><br></br>
             <button onClick={handleClick}>Add Hobby</button>
         </div>
 
