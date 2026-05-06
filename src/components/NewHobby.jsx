@@ -12,8 +12,9 @@ function NewHobby({setHobbies}) {
 
     return (
         <div>
+            <h2>New Hobby</h2>
             <label>Add new Hobby</label><br></br>
-            <input placeholder="Enter new Hobby" ref={newNameRef} /><br></br>
+            <input placeholder="Enter new Hobby" ref={newNameRef} />
             <button onClick={handleClick}>Add Hobby</button>
         </div>
 

@@ -1,10 +1,13 @@
-// import React from "react";
+import { useState } from "react";
+import Name from "./Name";
 
 const User = (props) => {
+    const [name, setName] = useState(props.name)
+
     return (
         <>
-            <h1>{props.name}</h1>
-            <h2>Hobbies</h2>
+            <h2>{name}</h2>
+            <Name name={setName} />
         </>
     )
 }
