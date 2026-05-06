@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "role": "Frontend Developer"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "role": "Backend Developer"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Getting Started with JSON Server",
+      "content": "JSON Server is great for mocking APIs quickly.",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "React and APIs",
+      "content": "Fetching data from APIs using fetch and async/await.",
+      "userId": 2
+    }
+  ]
+}
