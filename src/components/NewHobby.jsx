@@ -1,12 +1,13 @@
 import {useRef} from "react";
 
-function NewHobby({setHobby}) {
+function NewHobby({setHobbies}) {
     const newNameRef = useRef("")
 
-    function handleClick(){
-        console.log(newNameRef.current.value)
+    function handleClick(event){
+        let newHobby = newNameRef.current.value
         event.preventDefault();
-        setHobby((prevHobby) => {prevHobby, newNameRef.current.value})
+        setHobbies((prevHobbies) => [...prevHobbies, newHobby])
+        newNameRef.current.value = ""
     }
 
     return (
