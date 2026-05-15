@@ -17,15 +17,12 @@ function App() {
   const [hobbies, setHobbies] = useState(list)
   const [userList, setUserList] = useState(users)
 
-
-  
-
   return (
     <>
       <div>ROOT COMPONENT</div>
       <User name="Timothy Darrell" />
       <h2>Users</h2>
-      <Name user = {userList}/>
+      <Name user={userList} />
       <NewName userList={setUserList} />
       <Hobbies hobby={hobbies} />
       <NewHobby setHobbies={setHobbies} />
